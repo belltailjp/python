@@ -89,7 +89,7 @@ RUN set -ex \
 	&& make install \
 	&& rm -rf /usr/src/python \
 	\
-	&& find /usr/local -depth \
+	&& find /usr/local/lib/python* -depth \
 		\( \
 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) \
 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) \
